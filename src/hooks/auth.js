@@ -99,8 +99,8 @@ export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
     }
 
     useEffect(() => {
-        if (middleware == 'guest' && redirectIfAuthenticated && user) router.push(redirectIfAuthenticated)
-        if (middleware == 'auth' && error) logout()
+        // if (middleware == 'guest' && redirectIfAuthenticated && user) router.push(redirectIfAuthenticated)
+        // if (middleware == 'auth' && error) logout()
     }, [user, error])
 
     return {
